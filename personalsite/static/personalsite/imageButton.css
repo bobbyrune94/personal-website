@@ -8,21 +8,18 @@
 	}
 }
 
-.ImageButton {
-	display: flex;
-	flex-direction: column;
-}
-
 .ImageButton-home > img,
 .ImageButton > img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
 	width: 75%;
-	align-self: center;
+	height: auto;
 }
 
 .ImageButton-home {
-	display: flex;
-	flex-direction: column;
-
 	width: 80%;
-	height: auto;
+	min-height: 100px;
+	height: auto !important;
 }

@@ -129,6 +129,6 @@ except ImportError:
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'bobbyrune94@gmail.com'
-EMAIL_HOST_PASSWORD = 'nastia091'
+EMAIL_HOST_USER = 'kenchenpersonalsite@gmail.com'
+EMAIL_HOST_PASSWORD = 'personal-site'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'

@@ -13,4 +13,6 @@
 
 .Home-column > p {
 	text-align: center;
+	overflow: auto;
+	width: 100%;
 }
