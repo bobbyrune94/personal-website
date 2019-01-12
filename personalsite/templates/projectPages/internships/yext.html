@@ -1,0 +1,34 @@
+{% extends './internship.html' %}
+{% load static %}
+
+{% block title %}
+	Yext | Kenneth Chen
+{% endblock %}
+
+{% block lvl2Crumbs %}
+	<li class="breadcrumb-item"><a href="{% url 'intern' %}">Internships</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Yext</li>
+{% endblock %}
+
+{% block projectContent %}
+	<div class="Yext">
+		<h2>Yext</h2>
+		<div class="Project-details">
+			<p>For the summer of 2018, I worked as a Software Engineer Intern at the Yext office in Tysons Corner for their Consulting team. For those unfamiliar, Yext is a company that pioneered a field known as Digital Knowledge Management, or managing the information about a business that appears on Google, Yelp, Facebook, or anywhere else on the Internet. The problem Yext is trying to solve is how, with the increase in searches like "restaurants near me" or other "near me" searches, the information can be incorrect. For example, Google may say a restaurant is open but, when someone goes to the place, it's closed. With Yext's software, businesses can now simply update their information in the Yext Knowledge Manager and it will automatically update in all Yext-partnered location services. The Consulting team specifically works with building location pages and directories for the businesses. These are the pages that Google will link to in the "View Website" link, assuming the business is a Yext client. </p>
+			<p>Through the 3-week training process, I learned much more about Front-End technologies (HTML, CSS, Javascript) and applied what I learned to do work items for some of their many clients. While I never had the chance to build client's location pages from scratch, I built a full site as part of training. Link can be found <a href="http://kechen.yextdemos.com.yextpages.net/" target="_blank">here</a> (Note: username and password are both "test"). </p>
+			<p>Another project I worked on was developing a Slack command to create work items within a Slack thread. Often in specific Slack channels, people would point out an issue with a page and discuss how to fix it. With the extension I made, they can then quickly call the command within the thread and instantly create a work item to avoid having to hand-create the item on their own and fill in all the required fields. I was able to base my work off their existing slackbot models and simply copy-pasted some code to create a new listener to handle my specific command. I also utilized GitHub repositories to interface with Slack and JIRA APIs. </p>
+			<p>Most of the work I did for Yext was making quick fixes on client sites. Some notable clients I did work on included: 
+				<ul>
+					<li>fixing the Denny's Canada footer to match their corporate one (seen <a href="https://locations.dennys.ca/" target="_blank">here</a>)</li>
+					<li>removing flyouts for the Denny's side-header for both US and Canada sites</li>
+					<li>fixing auto-escaping on the Burger King locator (seen <a href="https://locations.bk.com/search.html" target="_blank">here</a> if you input something like "&lt;asdfas&gt;")</li>
+					<li>and adding the current-day hours above the weekly hours on the Macy's location page (seen <a href="https://l.macys.com/dulles-va" target="_blank">here</a>)</li>
+				</ul>
+			</p>
+			<p>Also, check out a video Yext made about their Tysons office. I make a few quick appearances.</p>
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe width="1519" height="554" src="https://www.youtube.com/embed/4hy1_iZ5s-E?list=FLY7aUisPyW-kIYfafvhtESQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+{% endblock %}

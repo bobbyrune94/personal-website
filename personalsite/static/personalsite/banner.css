@@ -1,0 +1,31 @@
+@media(max-width: 768px) {
+	.Banner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.Banner-image {
+		margin-right: 5%;
+	}
+
+	.Banner-description {
+		text-align: center;
+	}
+}
+
+@media(min-width: 768px) {
+	.Banner {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.Banner-image {
+		align-self: center;
+		margin-right: 5%;
+	}
+
+	.Banner-description > h1 {
+		margin-top: 0;
+	}
+}

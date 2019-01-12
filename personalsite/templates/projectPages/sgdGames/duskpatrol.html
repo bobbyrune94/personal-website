@@ -1,0 +1,19 @@
+{% extends './sgdGames.html' %}
+{% load static %}
+
+{% block title %}
+	Dusk Patrol | Kenneth Chen
+{% endblock %}
+
+{% block lvl2Crumbs %}
+	<li class="breadcrumb-item"><a href="{% url 'sgd' %}">SGD Games</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Dusk Patrol</li>
+{% endblock %}
+
+{% block projectContent %}
+	<div class="Projects">
+		<h2>Dusk Patrol</h2>
+		<p>Dusk Patrol is a shoot 'em up game where you play as a World War II fighter shooting through hordes of incoming planes as well as a giant blimp at the end. I worked on controls for moving and shooting for the player as well as the attacks for the boss-blimp. The github repository can be found <a href="https://github.com/UVASGD/fall-2017-dusk-patrol" target="_blank">here</a>.
+		</p>
+	</div>
+{% endblock %}

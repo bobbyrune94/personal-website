@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+	Performances | Kenneth Chen
+{% endblock %}
+
+{% block headingImage %}
+	<img src="{% static "personalsite/images/performance.jpg" %}" alt="Performance Image" height="140" width="150">
+{% endblock %}
+
+{% block heading %}
+	Performances
+{% endblock %}
+
+{% block intro %}
+	See my performances and competitions from cheerleading and martial arts
+{% endblock %}
+
+{% block content %}
+	<nav aria-label="breadcrumb">
+	  	<ol class="breadcrumb">
+	  		{% block breadcrumbs %}
+				<li class="breadcrumb-item active" aria-current="page">Home</li>
+			{% endblock %}
+	  	</ol>
+	</nav>
+
+	<ul class="nav nav-tabs">
+	  	<li class="nav-item">
+	  		<a class="nav-link {% block activeHome %}active{% endblock %}" href="{% url 'performances' %}">
+	  			Home
+	  		</a>
+	  	</li>
+	  	<li class="nav-item">
+	  		<a class="nav-link {% block activeWushu %}{% endblock %}" href="{% url 'wushu' %}">
+	  			Wushu
+	  		</a>
+	  	</li>
+	  	<li class="nav-item">
+	  		<a class="nav-link {% block activeCheer %}{% endblock %}" href="{% url 'cheer' %}">
+	  			Cheerleading
+	  		</a>
+	  	</li>
+	</ul>
+
+	{% block performanceContent %}
+		<div class="Performances">
+			<h2>My Performances</h2>
+			<p>Outside of school and academics, I like to think that I'm a physical performing artist. While I used to play violin in both solo and orchestral settings, I'd much rather be physically active doing jumps and tricks than standing in one spot, knees shaking and nerves racing. Thus, I turned to martial arts and cheerleading to get my adrenaline pumping. Feel free to check out my Wushu and Cheerleading performance and competition pictures and videos.</p>
+			<div class="Performances-categories">
+				<a href="{% url 'wushu' %}" class="ImageButton btn btn-outline-primary" role="button">
+					Wushu
+					<img src="{% static "personalsite/images/wushu.jpg" %}" alt="Wushu Image">
+				</a>
+				<a href="{% url 'cheer' %}" class="ImageButton btn btn-outline-primary" role="button">
+					Cheerleading
+					<img src="{% static "personalsite/images/cheer.jpg" %}" alt="Cheerleading Image">
+				</a>
+			</div>
+		</div>
+	{% endblock %}
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends './hoohacks.html' %}
+{% load static %}
+
+{% block title %}
+	Face Normalizer | Kenneth Chen
+{% endblock %}
+
+{% block lvl2Crumbs %}
+	<li class="breadcrumb-item"><a href="{% url 'hoohacks' %}">HooHacks</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Face Normalizer</li>
+{% endblock %}
+
+{% block projectContent %}
+	<div class="Normalizer">
+		<h2>Face Normalizer</h2>
+		<p>For HackUVA 2018, our team chose to tackle the Equality theme with our application. Our Face Normalizer will identify a face through the webcam video and overlay a mask that is an "average" face. Thus, anyone who views the video will know that there is a face and a person behind it, but will be unable to tell what race or gender the person is. </p>
+		<p>This idea stems from knowledge that often, in interviews where someone has to record video of themselves responding to questions or prompts, companies can use machine learning software to filter out only the best candidates. However, such software could be inherently biased against certain races based on the test data they were trained with and, thus, could unfairly discriminate against certain genders and races. With this app, we eliminate race or gender from the equation and have the software focused on what the person is saying.</p>
+		<p>Teammates: William Li, Jerry Lu, Rashid Lasker </p>
+		<p>Although this project is incomplete and glitchy, our pitch and real-world problem we addressed won us the Equality challenge! </p>
+		<p>The github repository can be found <a href="https://github.com/rashidlasker/face-normalizer" target="_blank">here</a>.</p>
+	</div>
+{% endblock %}

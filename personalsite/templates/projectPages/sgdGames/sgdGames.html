@@ -1,0 +1,41 @@
+{% extends '../../projects.html' %}
+{% load static %}
+
+{% block title %}
+	SGD | Kenneth Chen
+{% endblock %}
+
+{% block breadcrumbs %}
+	<li class="breadcrumb-item"><a href="{% url 'projects' %}">Home</a></li>
+	{% block lvl2Crumbs %}
+    	<li class="breadcrumb-item active" aria-current="page">SGD Games</li>
+    {% endblock %}
+{% endblock %}
+
+{% block activeHome %}
+{% endblock %}
+
+{% block activeSGD %}
+	active
+{% endblock %}
+
+{% block projectContent %}
+	<div class="Projects">
+		<h2>Student Game Developers Games</h2>
+		<p>Student Game Developers is a student-run club at UVA where students can pitch ideas for games and lead teams to develop said idea throughout the semester. It brings together programmers, artists, and writers to make every game as fleshed out and complete as possible. I have been a part of this club since my first semester in college and have enjoyed every project I've been a part of and learning how to use the Unity software. Check out these games I've contributed to so far.</p>
+		<div class="Projects-categories">
+			<a href="{% url 'kin' %}" class="ImageButton btn btn-outline-primary" role="button">
+				Kin
+				<img src="{% static "personalsite/images/kin.png" %}" alt="Kin Image">
+			</a>
+			<a href="{% url 'duskpatrol' %}" class="ImageButton btn btn-outline-primary" role="button">
+				Dusk Patrol
+				<img src="{% static "personalsite/images/duskpatrol.png" %}" alt="Dusk Patrol Image">
+			</a>
+			<a href="{% url 'bardstale' %}" class="ImageButton btn btn-outline-primary" role="button">
+				A Bard's Tale
+				<img src="{% static "personalsite/images/bardstale.png" %}" alt="Bard's Tale Image">
+			</a>
+		</div>
+	</div>
+{% endblock %}

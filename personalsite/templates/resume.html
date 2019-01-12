@@ -1,0 +1,137 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+	Resume | Kenneth Chen
+{% endblock %}
+
+{% block headingImage %}
+	<img src="{% static "personalsite/images/profile.jpg" %}" alt="Profile Image">
+{% endblock %}
+
+{% block heading %}
+	Resume
+{% endblock %}
+
+{% block intro %}
+	See the work experience and technical skills I've accumulated through the years.
+	If you would like to download a PDF of my resume, click <a href="{% static 'kennyResume.pdf' %}" download>here</a>.
+{% endblock %}
+
+{% block content %}
+	<div class="Resume">
+		<div class="Resume-header">
+			<div class="Resume-schoolAddress Address">
+				<h3>School Address:</h3>
+				<p class="Address-line1">2100 Jefferson Park Ave APT 1</p>
+				<p class="Address-line2">Charlottesville, VA 22903</p>
+			</div>
+			<div class="Resume-title">
+				<h2>Kenneth Chen</h2>
+				<p class="Resume-email">kchen.mail@icloud.com</p>
+				<p>571-267-1911</p>
+			</div>
+			<div class="Resume-homeAddress Address">
+				<h3>Permanent Address:</h3>
+				<p class="Address-line1">951 Preserve Ct.</p>
+				<p class="Address-line2">Great Falls, VA 22066</p>
+			</div>
+		</div>
+		<div class="Resume-education">
+			<h3>Education</h3>
+			<div class="Resume-entry">
+				<p class="Resume-schoolName">University of Virginia School of Engineering and Applied Science <span class="Resume-GPA">(Current GPA: 3.902)</span></p>
+				<p class="Resume-entryTime">May 2020 Grad</p>
+				<p class="Resume-entryDescription">Computer Science and Psychology Double Major, Applied Mathematics Minor</p>
+			</div>
+			<div class="Resume-entry">
+				<p class="Resume-schoolName">Thomas Jefferson High School for Science and Technology <span class="Resume-GPA">(Final GPA: 4.456)</span></p>
+				<p class="Resume-entryTime">2012-2016</p>
+			</div>
+		</div>
+		<div class="Resume-technical">
+			<h3>Technical Skills</h3>
+			<div class="Resume-skills">
+				<p><span class="Resume-skillTitle">Programming: </span>Java, Python, C, C++, C#, Android, HTML, JavaScript, x86 Assembly, Go</p>
+				<p><span class="Resume-skillTitle">Software: </span>Windows, Microsoft Office, Eclipse, Android Studio, Mathematica, Unity, Atom</p>
+			</div>
+		</div>
+		<div class="Resume-work">
+			<h3>Work Experience</h3>
+			<div class="Resume-entry">
+				<div class="Resume-entryName">
+					<p class="Resume-employerName">University of Virginia Department of Computer Science</p>
+					<p class="Resume-jobTitle">Head Teaching Assistant for CS 2110: Software Development Methods</p>
+				</div>
+				<p class="Resume-entryTime">Sept. 2017-Present</p>
+				<p class="Resume-entryDescription">Help students understand lecture material and solve homework or lab assignments. Supervise lab section and assist with exam grading. As Head Lab TA, create slides and explain topics during lab, act as primary point of contact for students, enter student lab grades, setup communication with other teaching assistants. Skills Used: <span class="Resume-skillsUsed">Java</span></p>
+			</div>
+			<div class="Resume-entry">
+				<div class="Resume-entryName">
+					<p class="Resume-employerName">Yext Tysons Corner</p>
+					<p class="Resume-jobTitle">Software Engineering Intern</p>
+				</div>
+				<p class="Resume-entryTime">Summer 2018</p>
+				<p class="Resume-entryDescription">Built and fixed bugs on multiple client location sites, developed and implemented automated unit testing for client site, built slackbot to create work items efficiently. For more details, click <a href="{% url 'yext' %}">here</a>. Skills Used: <span class="Resume-skillsUsed">HTML, CSS, Javascript, Go</span></p>
+			</div>
+			<div class="Resume-entry">
+				<div class="Resume-entryName">
+					<p class="Resume-employerName">Naval Surface Warfare Center Dahlgren Division</p>
+					<p class="Resume-jobTitle">Computer Science Intern</p>
+				</div>
+				<p class="Resume-entryTime">Summer 2017</p>
+				<p class="Resume-entryDescription">Contribute to building a simulation to test a new laser weapons system. Program in behaviors of different laser systems and environmental entities. For more details on the project, click <a href="{% url 'dahlgren' %}">here</a>. Skills Used: <span class="Resume-skillsUsed">C#, Unity</span></p>
+			</div>
+		</div>
+		<div class="Resume-projects">
+			<h3>Projects</h3>
+			<div class="Resume-entry">
+				<div class="Resume-entryName">
+					<p class="Resume-projectName">Textbook Marketplace</p>
+					<p class="Resume-jobTitle">Team Scrum Master</p>
+				</div>
+				<p class="Resume-entryTime">Fall Semester 2018</p>
+				<p class="Resume-entryDescription">Web application for students to buy and sell used textbooks using <span class="Resume-skillsUsed">Django</span> framework. Worked on searching and filtering and Heroku deployment. As scrum master, assigned weekly sprint work. Link: http://textbook-finder.herokuapp.com/</p>
+			</div>
+			<div class="Resume-entry">
+				<div class="Resume-entryName">
+					<p class="Resume-projectName">Yext Slackbot Extension</p>
+				</div>
+				<p class="Resume-entryTime">Summer 2018</p>
+				<p class="Resume-entryDescription">Created extension to existing slackbot that adds a command to create and link JIRA items within a Slack discussion thread using <span class="Resume-skillsUsed">Go</span>. Used Github libraries to integrate with Slack and JIRA APIs. For more details, click <a href="{% url 'yext' %}">here</a>.</p>
+			</div>
+			<div class="Resume-entry">
+				<div class="Resume-entryName">
+					<p class="Resume-projectName">A Bard's Tale</p>
+					<p class="Resume-jobTitle">Senior Programmer</p>
+				</div>
+				<p class="Resume-entryTime">Spring 2018</p>
+				<p class="Resume-entryDescription">Player controlled game utilizing sequences of notes to cast spells. Worked on implementing logic behind the casting of spells. For more details, click <a href="{% url 'bardstale' %}">here</a>.</p>
+			</div>
+			<div class="Resume-entry">
+				<div class="Resume-entryName">
+					<p class="Resume-projectName">Dusk Patrol</p>
+					<p class="Resume-jobTitle">Senior Artificial Intelligence Programmer</p>
+				</div>
+				<p class="Resume-entryTime">Fall 2017</p>
+				<p class="Resume-entryDescription">Player controlled shoot ‘em up game where an airplane is able to use a time-travelling mechanic to defeat waves of enemies. Worked on the time-travel mechanic, boss design, and shooting systems. For more details, click <a href="{% url 'duskpatrol' %}">here</a>.</p>
+			</div>
+		</div>
+		<div class="Resume-activities">
+			<h3>Extracurricular Activities</h3>
+			<div class="Resume-activityEntry">
+				<p class="Resume-activityName">Student Game Developers: <span class="Resume-activityPosition">Senior Programmer</span></p>
+				<p class="Resume-activityDescription">Programmed the artificial intelligence behaviors for NPCs and enemies and implemented general features in games. For list of games I've worked on, click <a href="{% url 'sgd' %}">here</a>.</p>
+			</div>
+			<div class="Resume-activityEntry">
+				<p class="Resume-activityName">HackUVA: <span class="Resume-activityPosition">Participant</span></p>
+				<p class="Resume-activityDescription">2017: Created a web application that uses IBM’s Watson to parse scientific articles and extract key ideas, concepts, and points. Won puzzle competition. For more details, click <a href="{% url 'simplisci' %}">here</a>.
+2018: Created a web application to generate a normalized face-mask to eliminate potential machine-learning biases in video-recognition software. Won Equality Challenge. For more details, click <a href="{% url 'normalizer' %}">here</a>.</p>
+			</div>
+			<div class="Resume-activityEntry">
+				<p class="Resume-activityName">Virginia Wushu Club: <span class="Resume-activityPosition">Vice President</span></p>
+				<p class="Resume-activityDescription">Learn and teach others Chinese martial arts by leading practices and helping to choreograph performances. Check out our performances <a href="{% url 'wushu' %}">here</a>.</p>
+			</div>
+		</div>
+	</div>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends '../../projects.html' %}
+{% load static %}
+
+{% block title %}
+	Classes | Kenneth Chen
+{% endblock %}
+
+{% block breadcrumbs %}
+	<li class="breadcrumb-item"><a href="{% url 'projects' %}">Home</a></li>
+	{% block lvl2Crumbs %}
+    	<li class="breadcrumb-item active" aria-current="page">Classes</li>
+    {% endblock %}
+{% endblock %}
+
+{% block activeHome %}
+{% endblock %}
+
+{% block activeClasses %}
+	active
+{% endblock %}
+
+{% block projectContent %}
+	<div class="Projects">
+		<h2>Classes</h2>
+		<p>I've had the chance to work on some semester-long projects for certain classes to apply the concepts that we learned. Take a look at some of the projects I've worked on below.</p>
+		<div class="Projects-classGroup">
+			<h4>Textbook Marketplace</h4>
+			<h6>For CS 3240 Advanced Software Development Methods</h6>
+			<p>Link to our textbook marketplace app is <a href="http://textbook-finder.herokuapp.com/" target="_blank">here</a>.</p>
+			<p>Unlike most other CS classes, the goal of this class was to expose us to real-world software development processes rather than learning coding algorithms or computer architecture. Thus, the professor had us work on a semester-long team project using the Agile process of stand-ups and weekly sprints to at least get our feet wet using these processes. We were also required to use the Django web framework, push our code to GitHub, and deploy our application using Heroku's free deployment process.</p>
+			<p>Our teams for this class were randomly assigned 6-person groups where each team member fulfilled a certain role. For example, I was the Scrum Master and my job was to ensure that our group was following the Agile methodology: having weekly stand-up meetings, noting what was finished and what was yet to be done, and assigning work for the next sprint. Other jobs included Testing Manager, who primarily wrote the tests for our app, and Software Architect, who created the design diagrams that explain what our app does.</p>
+			<p>As the name suggests, this web application is designed to be an area for students to buy and sell used textbooks to save from having to spend too much money buying new or renting textbooks. We figured that having students buying from and selling to each other would be an efficient and cheap way to circulate certain commonly used books. It would also give a much more user-friendly interface than the Student to Student Textbooks Facebook Group.</p>
+			<p>My work throughout the semester mostly revolved around the searching and filtering functionality and deploying the application to Heroku. I would also be the one to compile everyone's work at the end of the sprints to ensure we had something to demo in our lab sections. Initially, I had created some initial designs for some of the pages, but those were eventually overhauled at the end of the semester in favor of Boostrap components.</p>
+			<p>Although I didn't learn much about software development processes since I already had exposure to Agile in my two prior internships, I learned a lot about creating a web app from the ground up. I'm actually using the ideas learned from this project in creating this website, using the django framework to create the pages and Heroku to deploy the site for free.</p>
+		</div>
+	</div>
+{% endblock %}

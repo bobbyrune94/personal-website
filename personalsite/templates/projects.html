@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+	Projects | Kenneth Chen
+{% endblock %}
+
+{% block headingImage %}
+	<img src="{% static "personalsite/images/working.jpg" %}" alt="Working Image" height="140" width="150">
+{% endblock %}
+
+{% block heading %}
+	Projects
+{% endblock %}
+
+{% block intro %}
+	Look at the projects and games I’ve built during school and during internships.
+{% endblock %}
+
+{% block content %}
+	<nav aria-label="breadcrumb">
+	  	<ol class="breadcrumb">
+	  		{% block breadcrumbs %}
+				<li class="breadcrumb-item active" aria-current="page">Home</li>
+			{% endblock %}
+	  	</ol>
+	</nav>
+
+	<ul class="nav nav-tabs">
+	  	<li class="nav-item">
+	  		<a class="nav-link {% block activeHome %}active{% endblock %}" href="{% url 'projects' %}">
+	  			Home
+	  		</a>
+	  	</li>
+	  	<li class="nav-item">
+	  		<a class="nav-link {% block activeSGD %}{% endblock %}" href="{% url 'sgd' %}">
+	  			SGD Games
+	  		</a>
+	  	</li>
+	  	<li class="nav-item">
+	  		<a class="nav-link {% block activeHooHacks %}{% endblock %}" href="{% url 'hoohacks' %}">
+	  			HackUVA/HooHacks
+	  		</a>
+	  	</li>
+	  	<li class="nav-item">
+	  		<a class="nav-link {% block activeIntern %}{% endblock %}" href="{% url 'intern' %}">
+	  			Internships
+	  		</a>
+	  	</li>
+	  	<li class="nav-item">
+	  		<a class="nav-link {% block activeClasses %}{% endblock %}" href="{% url 'classes' %}">
+	  			Classes
+	  		</a>
+	  	</li>
+	</ul>
+
+	{% block projectContent %}
+		<div class="Projects">
+			<h2>My Projects</h2>
+			<p>I've had a chance to work on many different projects throughout my college career through the Student Game Developers Club (SGD), HackUVA, and in my internships over summers. Feel free to click into the sub-categories below, play some of the games, and learn more about each project.</p>
+			<div class="Projects-categories">
+				<a href="{% url 'sgd' %}" class="ImageButton btn btn-outline-primary" role="button">
+					SGD Games
+					<img src="{% static "personalsite/images/sgd.png" %}" alt="SGD Image">
+				</a>
+				<a href="{% url 'hoohacks' %}" class="ImageButton btn btn-outline-primary" role="button">
+					HackUVA/HooHacks
+					<img src="{% static "personalsite/images/hoohacks.png" %}" alt="HooHacks Image">
+				</a>
+				<a href="{% url 'intern' %}" class="ImageButton btn btn-outline-primary" role="button">
+					Internships
+					<img src="{% static "personalsite/images/internships.png" %}" alt="Internships Image">
+				</a>
+				<a href="{% url 'classes' %}" class="ImageButton btn btn-outline-primary" role="button">
+					Classes
+					<img src="{% static "personalsite/images/classes.png" %}" alt="UVA CS Image">
+				</a>
+			</div>
+		</div>
+	{% endblock %}
+{% endblock %}

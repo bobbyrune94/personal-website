@@ -1,0 +1,22 @@
+@media(max-width: 768px) {
+	.Performances-categories {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.Performances-categories > a {
+		margin-bottom: 15px;
+	}
+}
+
+@media(min-width: 768px) {
+	.Performances-categories {
+		display: flex;
+		justify-content: space-around;
+		flex-direction: row;
+	}
+}
+
+.Performances > h2 {
+	text-align: center;
+}

@@ -1,0 +1,19 @@
+{% extends './sgdGames.html' %}
+{% load static %}
+
+{% block title %}
+	Kin | Kenneth Chen
+{% endblock %}
+
+{% block lvl2Crumbs %}
+	<li class="breadcrumb-item"><a href="{% url 'sgd' %}">SGD Games</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Kin</li>
+{% endblock %}
+
+{% block projectContent %}
+	<div class="Projects">
+		<h2>Kin</h2>
+		<p>Kin is a game where you play as a Spanish Monk exploring a new world vanquishing Mayan- and Aztec-inspired Gods, talking to villagers, and collect resources all within a time limit. I primarily worked on programming the behaviors of the enemies and creating the bosses for the player to fight. More information on about the game can be found <a href="https://defaulttidus.itch.io/kin" target="_blank">here</a>. The github repository can be found <a href="https://github.com/UVASGD/spring-2017-kin" target="_blank">here</a>.</p>
+		<p>This was the first game I worked on as part of SGD and spanned my entire first year of college. Through working on this game, I learned a lot about how the Unity framework worked and how a typical game-building team worked. </p>
+	</div>
+{% endblock %}

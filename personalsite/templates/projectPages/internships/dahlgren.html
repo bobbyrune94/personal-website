@@ -1,0 +1,20 @@
+{% extends './internship.html' %}
+{% load static %}
+
+{% block title %}
+	NSWCDD | Kenneth Chen
+{% endblock %}
+
+{% block lvl2Crumbs %}
+	<li class="breadcrumb-item"><a href="{% url 'intern' %}">Internships</a></li>
+    <li class="breadcrumb-item active" aria-current="page">NSWCDD</li>
+{% endblock %}
+
+{% block projectContent %}
+	<div class="NSWCDD">
+		<h2>Naval Surface Warfare Center Dahlgren Division</h2>
+		<p>For the summer 2017, after my first year, I was a Computer Science Engineer for the Navy at the Naval Surface Warfare Center Dahlgren Division (NSWCDD) in their Software Applications & System Security Engineering Branch. There I worked on a project developing a simulation for a new laser weapon system for the Navy in Unity 3D, which I had experience working in the past year through developing for Kin. Our job was to simulate the system's internal workings as well as provide an environment for which the weapon can be tested. </p>
+		<p>I worked a lot on populating the surrounding environment with buildings, walls, and aircraft, programming weapon functionalities and movement, and ensuring our simulation environment matched data passed to it by other systems. I also got a chance to see the weapon up close when they brought it onto the base!
+		</p>
+	</div>
+{% endblock %}
