@@ -38,11 +38,12 @@
 			</div>
 		</div>
 		<div class="Resume-education">
-			<h3>Education</h3>
+			<h3 class="Resume-sectionHeader">Education</h3>
 			<div class="Resume-entry">
-				<p class="Resume-schoolName">University of Virginia School of Engineering and Applied Science <span class="Resume-GPA">(Current GPA: 3.902)</span></p>
+				<p class="Resume-schoolName">University of Virginia School of Engineering and Applied Science <span class="Resume-GPA">(Current GPA: 3.899)</span></p>
 				<p class="Resume-entryTime">May 2020 Grad</p>
-				<p class="Resume-entryDescription">Computer Science and Psychology Double Major, Applied Mathematics Minor</p>
+				<p class="Resume-majors">Computer Science and Psychology Double Major, Applied Mathematics Minor</p>
+				<p class="Resume-classes">Relevant Classwork: Intro to Cybersecurity, Machine Learning, Database Systems</p>
 			</div>
 			<div class="Resume-entry">
 				<p class="Resume-schoolName">Thomas Jefferson High School for Science and Technology <span class="Resume-GPA">(Final GPA: 4.456)</span></p>
@@ -50,14 +51,14 @@
 			</div>
 		</div>
 		<div class="Resume-technical">
-			<h3>Technical Skills</h3>
+			<h3 class="Resume-sectionHeader">Technical Skills</h3>
 			<div class="Resume-skills">
 				<p><span class="Resume-skillTitle">Programming: </span>Java, Python, C, C++, C#, Android, HTML, JavaScript, x86 Assembly, Go</p>
 				<p><span class="Resume-skillTitle">Software: </span>Windows, Microsoft Office, Eclipse, Android Studio, Mathematica, Unity, Atom</p>
 			</div>
 		</div>
 		<div class="Resume-work">
-			<h3>Work Experience</h3>
+			<h3 class="Resume-sectionHeader">Work Experience</h3>
 			<div class="Resume-entry">
 				<div class="Resume-entryName">
 					<p class="Resume-employerName">University of Virginia Department of Computer Science</p>
@@ -65,6 +66,14 @@
 				</div>
 				<p class="Resume-entryTime">Sept. 2017-Present</p>
 				<p class="Resume-entryDescription">Help students understand lecture material and solve homework or lab assignments. Supervise lab section and assist with exam grading. As Head Lab TA, create slides and explain topics during lab, act as primary point of contact for students, enter student lab grades, setup communication with other teaching assistants. Skills Used: <span class="Resume-skillsUsed">Java</span></p>
+			</div>
+			<div class="Resume-entry">
+				<div class="Resume-entryName">
+					<p class="Resume-employerName">Yext Tysons Corner</p>
+					<p class="Resume-jobTitle">Software Engineering Intern</p>
+				</div>
+				<p class="Resume-entryTime">Summer 2019</p>
+				<p class="Resume-entryDescription">Implemented processes to load client data into our platform, created dashboard to display site views per employee based on Git contribution, updated team family tree. Skills Used: <span class="Resume-skillsUsed">HTML, CSS, Javascript, Go, Git, JIRA, Agile, SQL</span></p>
 			</div>
 			<div class="Resume-entry">
 				<div class="Resume-entryName">
@@ -84,7 +93,7 @@
 			</div>
 		</div>
 		<div class="Resume-projects">
-			<h3>Projects</h3>
+			<h3 class="Resume-sectionHeader">Projects</h3>
 			<div class="Resume-entry">
 				<div class="Resume-entryName">
 					<p class="Resume-projectName">Textbook Marketplace</p>
@@ -102,23 +111,15 @@
 			</div>
 			<div class="Resume-entry">
 				<div class="Resume-entryName">
-					<p class="Resume-projectName">A Bard's Tale</p>
+					<p class="Resume-projectName">Various Student Game Developers Projects (Kin, Dusk Patrol, Bard's Tale)</p>
 					<p class="Resume-jobTitle">Senior Programmer</p>
 				</div>
 				<p class="Resume-entryTime">Spring 2018</p>
-				<p class="Resume-entryDescription">Player controlled game utilizing sequences of notes to cast spells. Worked on implementing logic behind the casting of spells. For more details, click <a href="{% url 'bardstale' %}">here</a>.</p>
-			</div>
-			<div class="Resume-entry">
-				<div class="Resume-entryName">
-					<p class="Resume-projectName">Dusk Patrol</p>
-					<p class="Resume-jobTitle">Senior Artificial Intelligence Programmer</p>
-				</div>
-				<p class="Resume-entryTime">Fall 2017</p>
-				<p class="Resume-entryDescription">Player controlled shoot ‘em up game where an airplane is able to use a time-travelling mechanic to defeat waves of enemies. Worked on the time-travel mechanic, boss design, and shooting systems. For more details, click <a href="{% url 'duskpatrol' %}">here</a>.</p>
+				<p class="Resume-entryDescription">Used Unity to design and implement many game systems, including time travel, spell casting mechanics, and enemy behaviors. Link to projects <a href="{% url 'sgd' %}">here</a>.</p>
 			</div>
 		</div>
 		<div class="Resume-activities">
-			<h3>Extracurricular Activities</h3>
+			<h3 class="Resume-sectionHeader">Extracurricular Activities</h3>
 			<div class="Resume-activityEntry">
 				<p class="Resume-activityName">Student Game Developers: <span class="Resume-activityPosition">Senior Programmer</span></p>
 				<p class="Resume-activityDescription">Programmed the artificial intelligence behaviors for NPCs and enemies and implemented general features in games. For list of games I've worked on, click <a href="{% url 'sgd' %}">here</a>.</p>

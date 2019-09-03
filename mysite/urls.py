@@ -31,6 +31,7 @@ urlpatterns = [
 	path('projects/hoohacks', views.HooHacksView.as_view(template_name='projectPages/hackathon/hoohacks.html'), name='hoohacks'),
 	path('projects/hoohacks/simplisci', views.SimplisciView.as_view(template_name='projectPages/hackathon/simplisci.html'), name='simplisci'),
 	path('projects/hoohacks/faceNormalizer', views.NormalizerView.as_view(template_name='projectPages/hackathon/faceNormalizer.html'), name='normalizer'),
+	path('projects/hoohacks/cupanoowords', views.SimplisciView.as_view(template_name='projectPages/hackathon/cupanoowords.html'), name='cupanoowords'),
 	path('projects/internships', views.InternView.as_view(template_name='projectPages/internships/internship.html'), name='intern'),
 	path('projects/internships/dahlgren', views.DahlgrenView.as_view(template_name='projectPages/internships/dahlgren.html'), name='dahlgren'),
 	path('projects/internships/yext', views.YextView.as_view(template_name='projectPages/internships/yext.html'), name='yext'),

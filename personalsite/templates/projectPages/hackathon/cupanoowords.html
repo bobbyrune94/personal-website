@@ -1,0 +1,21 @@
+{% extends './hoohacks.html' %}
+{% load static %}
+
+{% block title %}
+	Face Normalizer | Kenneth Chen
+{% endblock %}
+
+{% block lvl2Crumbs %}
+	<li class="breadcrumb-item"><a href="{% url 'hoohacks' %}">HooHacks</a></li>
+    <li class="breadcrumb-item active" aria-current="page">CupANooWords</li>
+{% endblock %}
+
+{% block projectContent %}
+	<div class="Normalizer">
+		<h2>Cup A Noo Words</h2>
+		<p>For HackUVA 2019, our team chose to tackle the Education theme with our application. Cup A Noo Words would parse through an article or passage and, given a dictionary of words and definitions, highlight those words in the passage and provide a hover module so that readers can see what that particular word means.</p>
+		<p>This idea was inspired by Microstrategy's module system combined with our experience learning vocabulary words in both English and other languages. We thought that it would be nice to see what certain words mean as you read a passage so that you don't have to repeatedly stop to look them up. This app would be really useful for any language class that requires reading passages as the teacher could upload the passage and a dictionary of vocab words from that passage and students would be able to read the passage and learn the new words. And since we expect that people will learn only a couple of words at a time, we came up with the name Cup A Noo Words (also inspired by the Cup Noodles we were eating)</p>
+		<p>Teammates: Stephen Shiao, CJ Rogers </p>
+		<p>The github repository can be found <a href="https://github.com/ss2sc/CupaNooWords" target="_blank">here</a>.</p>
+	</div>
+{% endblock %}
